@@ -1,10 +1,14 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 function Contact() {
 
@@ -15,6 +19,7 @@ function Contact() {
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
+  const [showSuccess, setShowSuccess] = useState<boolean>(false);
 
   const form = useRef();
 
@@ -25,28 +30,24 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
-
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+    if (name !== '' && email !== '' && message !== '') {
+      // Create mailto link with form data
+      const subject = `Portfolio Contact from ${name}`;
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+      const mailtoLink = `mailto:kumarpradeep2008.1@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 5000);
+      
+      // Reset form
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
 
   return (
@@ -55,6 +56,32 @@ function Contact() {
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          
+          {/* Contact Information */}
+          <div className="contact-info">
+            <div className="contact-item">
+              <EmailIcon />
+              <a href="mailto:kumarpradeep2008.1@gmail.com">kumarpradeep2008.1@gmail.com</a>
+            </div>
+            <div className="contact-item">
+              <PhoneIcon />
+              <a href="tel:+919439549107">+91 9439549107</a>
+            </div>
+            <div className="contact-item">
+              <LinkedInIcon />
+              <a href="https://linkedin.com/in/pradeep-kumar-profile" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+            </div>
+            <div className="contact-item">
+              <GitHubIcon />
+              <a href="https://github.com/pradeep-kumar-1705807" target="_blank" rel="noreferrer">GitHub Profile</a>
+            </div>
+            <div className="contact-item">
+              <LocationOnIcon />
+              <span>Bengaluru, Karnataka, India</span>
+            </div>
+          </div>
+
+          {/* Contact Form */}
           <Box
             ref={form}
             component="form"
@@ -62,6 +89,11 @@ function Contact() {
             autoComplete="off"
             className='contact-form'
           >
+            {showSuccess && (
+              <div className="success-message">
+                Your email client should open with a pre-filled message. If it doesn't, please email me directly at kumarpradeep2008.1@gmail.com
+              </div>
+            )}
             <div className='form-flex'>
               <TextField
                 required
@@ -104,7 +136,7 @@ function Contact() {
               helperText={messageError ? "Please enter the message" : ""}
             />
             <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
-              Send
+              Send Email
             </Button>
           </Box>
         </div>
