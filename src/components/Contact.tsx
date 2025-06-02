@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -63,10 +62,7 @@ function Contact() {
               <EmailIcon />
               <a href="mailto:kumarpradeep2008.1@gmail.com">kumarpradeep2008.1@gmail.com</a>
             </div>
-            <div className="contact-item">
-              <PhoneIcon />
-              <a href="tel:+919439549107">+91 9439549107</a>
-            </div>
+
             <div className="contact-item">
               <LinkedInIcon />
               <a href="https://linkedin.com/in/pradeep-kumar-profile" target="_blank" rel="noreferrer">LinkedIn Profile</a>
@@ -110,14 +106,14 @@ function Contact() {
               <TextField
                 required
                 id="outlined-required"
-                label="Email / Phone"
+                label="Email"
                 placeholder="How can I reach you?"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
                 error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
+                helperText={emailError ? "Please enter your email" : ""}
               />
             </div>
             <TextField

@@ -4,6 +4,28 @@
   margin-right: 5px;
 }
 
+.contact_wrapper {
+  h1 {
+    color: white;
+  }
+  
+  p {
+    color: white;
+  }
+}
+
+// Light mode wrapper text
+.light-mode .contact_wrapper {
+  h1 {
+    color: #0d1116;
+  }
+  
+  p {
+    color: #0d1116;
+  }
+}
+
+// Dark mode styles (default)
 .contact-info {
   margin: 20px 0;
   padding: 20px;
@@ -24,7 +46,7 @@
   }
   
   a {
-    color: inherit;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
     
@@ -34,7 +56,33 @@
   }
   
   span {
-    color: inherit;
+    color: white;
+  }
+}
+
+// Light mode styles
+.light-mode {
+  .contact-info {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-item {
+    a {
+      color: #0d1116;
+      
+      &:hover {
+        color: #5000ca;
+      }
+    }
+    
+    span {
+      color: #0d1116;
+    }
+    
+    svg {
+      color: #5000ca;
+    }
   }
 }
 
@@ -45,6 +93,12 @@
   border-radius: 5px;
   margin-bottom: 15px;
   text-align: center;
+}
+
+// Light mode success message
+.light-mode .success-message {
+  background-color: #4caf50;
+  color: white;
 }
 
 .contact-form {
@@ -60,7 +114,7 @@
     }
   }
 
-  // Fix TextField visibility and styling
+  // Fix TextField visibility and styling for dark mode
   .MuiTextField-root {
     .MuiInputBase-root {
       background-color: rgba(255, 255, 255, 0.95);
@@ -109,6 +163,24 @@
 
   fieldset {
     background-color: transparent;
+  }
+}
+
+// Light mode specific styles for form
+.light-mode .contact-form {
+  .MuiTextField-root {
+    .MuiInputBase-root {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #000;
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      
+      &.Mui-focused {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
   }
 }
 
