@@ -1,86 +1,141 @@
-# Developer Portfolio Template 🚀
+# Pradeep Kumar - Portfolio Website 🚀
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-## What is this?
+## About This Portfolio
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+This is the professional portfolio website for **Pradeep Kumar**, a Senior Backend Developer with 4+ years of experience in building scalable web applications. The portfolio showcases his technical expertise, professional journey, and key achievements in backend development.
 
-View the [Demo](https://yujisatojr.github.io/react-portfolio-template/).
+**🌐 Live Website:** [https://pradeep-kumar-1705807.github.io/pradeep-portfolio/](https://pradeep-kumar-1705807.github.io/pradeep-portfolio/)
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
+## About Pradeep Kumar
 
-![screenshot](./src/assets//images/screenshot.png)
+- **Senior Backend Developer** with expertise in Java, Spring Boot, and microservices architecture
+- **Current Role:** Senior Backend Developer at BukuWarung (Nov 2021 - Present)
+- **Previous Experience:** Backend Developer at FICO (Jan 2021 - Nov 2021)
+- **Education:** B.Tech in Computer Science from KIIT University (CGPA: 8.7/10)
+- **Certifications:** AWS Certified Solutions Architect Associate
 
-## Features
+## Key Features & Highlights
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+✅ **Professional Experience:** Detailed showcase of 4+ years in backend development  
+✅ **Technical Expertise:** Comprehensive skills in Java, Spring Boot, Python, and cloud technologies  
+✅ **Project Portfolio:** Featured projects including Loan Processing System and QMoney Portfolio Manager  
+✅ **Achievement Highlights:** 11 key professional achievements and AWS certification  
+✅ **Responsive Design:** Mobile-friendly and modern UI/UX  
+✅ **Performance Optimized:** Fast loading and efficient codebase  
 
-## Quick Setup
+## Technical Stack
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+- **Frontend:** React, TypeScript, SCSS
+- **Backend Expertise Showcased:** Java, Spring Boot, Python, Node.js
+- **Databases:** PostgreSQL, MySQL, MongoDB, Redis
+- **Cloud & DevOps:** AWS, Docker, Kubernetes, Jenkins
+- **Message Queues:** RabbitMQ, Apache Kafka
+- **Testing:** JUnit, Mockito, Postman  
+
+## Development Setup
+
+1. **Prerequisites:** Ensure you have [Node.js](https://nodejs.org/) (v16 or higher) installed:
 
     ```bash
     node -v
+    npm -v
     ```
 
-2. In the project directory, install dependencies:
+2. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/pradeep-kumar-1705807/pradeep-portfolio.git
+    cd pradeep-portfolio
+    ```
+
+3. **Install dependencies:**
 
     ```bash
     npm install
     ```
 
-3. Start the development server:
+4. **Start the development server:**
 
     ```bash
     npm start
     ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+5. **Open your browser:** Navigate to [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
+The development server will automatically reload when you make changes, and any errors will be displayed in the console.
 
-The page will reload if you make edits, and you will see any lint errors in the console.
+## Available Scripts
+
+- **`npm start`** - Runs the development server
+- **`npm run build`** - Creates an optimized production build
+- **`npm run test`** - Launches the test runner
+- **`npm run deploy`** - Deploys the application to GitHub Pages
+
+## Project Structure
+
+```
+src/
+├── components/           # React components
+│   ├── Main.tsx         # Hero section with introduction
+│   ├── Timeline.tsx     # Work experience timeline
+│   ├── Expertise.tsx    # Technical skills showcase
+│   ├── Project.tsx      # Project portfolio
+│   ├── Achievements.tsx # Professional achievements
+│   └── Contact.tsx      # Contact information
+├── assets/
+│   ├── images/          # Project screenshots and images
+│   └── styles/          # SCSS stylesheets
+└── App.tsx              # Main application component
+```
 
 If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
 
 ## Deployment
 
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
+This portfolio is deployed using GitHub Pages and is automatically updated when changes are pushed to the main branch.
 
-1. **Set Up GitHub Repository**
+**Live URL:** [https://pradeep-kumar-1705807.github.io/pradeep-portfolio/](https://pradeep-kumar-1705807.github.io/pradeep-portfolio/)
 
-    Create a new repository on GitHub for your portfolio app.
+### Manual Deployment Steps
 
-2. **Configure `package.json`**
+1. **Build the project:**
 
-    Edit the following properties in your `package.json` file:
-
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
+    ```bash
+    npm run build
     ```
 
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
-
-3. **Deploy to GitHub Pages**
-
-    Run the following command to deploy your app:
+2. **Deploy to GitHub Pages:**
 
     ```bash
     npm run deploy
     ```
 
-4. **Access Your Deployed App**
+The deployment process is configured in `package.json` with the following settings:
 
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+```json
+{
+    "homepage": "https://pradeep-kumar-1705807.github.io/pradeep-portfolio",
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    }
+}
+```
+
+## Contact Information
+
+- **Email:** pradeepkumar17058@gmail.com
+- **Phone:** +91 9439549107
+- **LinkedIn:** [linkedin.com/in/pradeep-kumar-profile](https://linkedin.com/in/pradeep-kumar-profile)
+- **GitHub:** [github.com/pradeep-kumar-1705807](https://github.com/pradeep-kumar-1705807)
+- **Location:** Bengaluru, Karnataka, India
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+*Built with ❤️ by Pradeep Kumar using React and TypeScript*
