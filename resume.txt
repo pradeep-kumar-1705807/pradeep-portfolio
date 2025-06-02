@@ -1,0 +1,126 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5 in,top=0.4in,right=0.5 in,bottom=0.2in]{geometry} % Document margins
+\name{Pradeep Kumar} % Your name
+\address{+91 7992285687 \\ kumarpradeep2008.1@gmail.com}  
+\address{\href{https://www.linkedin.com/in/pradeep-kumar-6124a3145/}{linkedin.com/in/pradeep-kumar-6124a3145} \\ \href{https://criodo.github.io/Crio-Launch-Feb-2020-kumarpradeep2008-1/}{criodo.github.io/Crio-Launch-Feb-2020-kumarpradeep2008-1/}}  %
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{OBJECTIVE}
+
+{Software Engineer with \textbf {4} years of experience in \textbf{Backend Development}}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\textbf{Software Engineer (Backend)} \hfill {11/2021 - Present} \\
+BukuWarung, India
+\begin{itemize}
+    \item Implemented server-side rate limiting in Spring Cloud Gateway to enhance API security, prevent resource starvation, and mitigate bot/spam attacks.
+    \item Designed a centralized audit trails system for Panacea, consolidating activity logs from multiple dashboards, enhancing data visibility for external audits.
+    \item Strengthened Open API security by implementing a Blacklist-Service, enhancing defense against malicious requests.
+    \item  Developed switching mechanism for message providers based on delivery metrics, optimizing message delivery rates with minimal manual intervention up to 85\%.
+    \item Automated B2B CompanyID/Secret upload to Redis for App Gateway authentication with database as fallback for high availability.
+    \item Significantly improved unit test coverage to 90\% for multiple services, elevated code quality, resolved bugs, addressed production issues, and adeptly managed on-call responsibilities.
+    \item Optimized Datadog logging configuration, resulting in a 50\% cost reduction across multiple services. This involved identifying and disabling unnecessary logs, improving overall logging efficiency. 
+    \item Engineered an automated retry disbursement solution for failed transactions, integrating AJ’s system for BukuWarung to streamline operations and enhance transaction reliability.
+    
+    \item  Proven ability to automate data workflows. Developed a script utilizing \textbf{Google Drive API} and \textbf{AWS SDK (boto3)} to seamlessly transfer files between Google Drive to S3 storage. This script ensures efficient data movement, scalability with S3, and secure API interactions.
+    
+    \item Implemented Komisi Agen cashback withdrawal bank account and transaction history features, empowering merchants to seamlessly withdraw EDC revenue sharing and monitor detailed earnings as per product requirements.
+
+    \item Implemented \textbf{device-level login blocking using Bureau Fingerprint ID} to prevent fraud and enhance account security at BukuWarung.
+\end{itemize}
+
+\textbf{SDE - Intern + Associate} \hfill {01/2021 - 11/2021} \\
+Fair Issac Corporation (FICO)
+\begin{itemize}
+    \item Involved in writing business logic and Java code at the backend.
+    \item Contributed to improve code coverage of project upto 85\%.
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\textbf{Technical Skills:}
+\begin{itemize}
+    \item \textbf{\textbf{Programming Languages \& Frameworks}}: Java, Spring Boot, C++, C, 
+    \item \textbf{Monitoring / Testing Tools}:  DataDog, JMeter, Mockito / Junit5, Postman
+    \item  \textbf{\textbf{Messaging} \& Streaming }:  Kafka 
+    \item \textbf{Databases \& Data Storage}: PostgreSQL , Redis, AWS S3, 
+    \item \textbf{Development Skills}: OOPs,Data Structures, System Design, Algorithms, Design Pattern.
+    \item \textbf{Version Control System}: Git, Github
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\textbf{Loan Processing System (Training Project - FICO)} (\href{https://github.com/pradeep-kumar-1705807/loan-application}{Link})
+\begin{itemize}
+    \item Loan Processing System is a simple web application that accepts the loan of the applicant based on score, age, and salary.
+    \item Created CRUD operations along with a search feature.
+    \item Used HTML, CSS, JSP, Java Spring Framework, Hibernate, MySQL, MVC Pattern to build the project.
+\end{itemize}
+
+\textbf{QMoney} (\href{https://criodo.github.io/Crio-Launch-Feb-2020-kumarpradeep2008-1/}{Link})
+\begin{itemize}
+    \item QMoney is a visual stock portfolio analyzer.
+    \item Implemented the core logic of the portfolio manager, refactored the code to add support for multiple stock quotes services.
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bachelor Of Technology (Computer Science and Engineering)} \hfill {06/2017 - 06/2021} \\
+Kalinga Institute of Industrial Technology \\
+CGPA: 8.7 \\
+\textbf{Relevant Coursework}: Data Structures, Operating-System, Algorithms, Database, System Design, Object-Oriented Programming
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% ACHIEVEMENTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Achievements}
+
+\begin{itemize}
+    \item AWS Cloud Practitioner Certified (2021). \href{https://drive.google.com/file/d/1zG-7c-9Rnkm3jrKfbzyAm2-igfN1BOOP/view?usp=sharing}{Link} 
+    \item ACM ICPC (First Online Round) - Team: geek\_boys, Rank: 1735. \href{https://icpc.global/ICPCID/R85Q8YTICQS8}{Link}
+    \item Google Hash Code 2020 - Online Qualification Round Country Rank: 236, Global Rank: 1936, Hub Rank: 3. \href{https://drive.google.com/file/d/18dKmc5kUISobv4M73WTxhJMorTKZdr0a/view}{Link}
+    \item Google Kick-Start Round H 2019 - Global Rank: 435. \href{https://drive.google.com/file/d/1_bn2KlLIQCk994Nb1Sn8DCFjb8Nz2czS/view}{Link}
+    \item  Problem Solving  Leetcode. \href{https://leetcode.com/user7117k/}{Link}
+    \item Google Code Jam 2019/2020 - Qualified Online Qualification Round Rank 2020: 6385th Global. Qualified Qualification Round. Progressed till Round 2 in 2019. \href{https://drive.google.com/file/d/1RiYnlapBJ9Jk1mplE-Nl_yHTodoBq-w7/view}{Link}
+\end{itemize}
+
+\end{rSection}
+
+\end{document}
