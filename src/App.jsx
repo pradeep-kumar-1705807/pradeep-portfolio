@@ -14,7 +14,7 @@ export default function Portfolio() {
             <a href="https://github.com/pradeep-kumar-1705807" target="_blank" rel="noopener noreferrer" className="hero-link">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/pradeep-kumar-6124a3145" target="_blank" rel="noopener noreferrer" className="hero-link">
+            <a href="https://www.linkedin.com/in/pradeep-kumar-6124a3145/" target="_blank" rel="noopener noreferrer" className="hero-link">
               LinkedIn
             </a>
             <a href="mailto:kumarpradeep2008.1@gmail.com" className="hero-link">
@@ -258,7 +258,7 @@ export default function Portfolio() {
               <a href="https://github.com/pradeep-kumar-1705807" target="_blank" rel="noopener noreferrer" className="contact-link">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/pradeep-kumar-6124a3145" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <a href="https://www.linkedin.com/in/pradeep-kumar-6124a3145/" target="_blank" rel="noopener noreferrer" className="contact-link">
                 LinkedIn
               </a>
             </div>

@@ -65,7 +65,7 @@ function Contact() {
 
             <div className="contact-item">
               <LinkedInIcon />
-              <a href="https://linkedin.com/in/pradeep-kumar-profile" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/pradeep-kumar-6124a3145/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
             </div>
             <div className="contact-item">
               <GitHubIcon />
