@@ -128,7 +128,7 @@ The deployment process is configured in `package.json` with the following settin
 
 - **Email:** kumarpradeep2008.2@gmail.com
 
-- **LinkedIn:** [linkedin.com/in/pradeep-kumar-profile](https://linkedin.com/in/pradeep-kumar-profile)
+- **LinkedIn:** [linkedin.com/in/pradeep-kumar-6124a3145](https://www.linkedin.com/in/pradeep-kumar-6124a3145/)
 - **GitHub:** [github.com/pradeep-kumar-1705807](https://github.com/pradeep-kumar-1705807)
 - **Location:** Bengaluru, Karnataka, India
 
